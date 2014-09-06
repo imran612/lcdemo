@@ -3,60 +3,21 @@
      xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core">
 	<List id="procQues">
-        <InputListItem>
-            <Text text="Confirm ALL these items from the previous order have been removed and stored propery" />
-        </InputListItem>
-        <InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-            <Switch state="true" />
-        </InputListItem>
-        <InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-            <Switch state="true" />
-        </InputListItem>
-        <InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-            <Switch state="true" />
-        </InputListItem>
         
-        <InputListItem>
-            <Text class="hdngTxt" text="Confirm ALL these items from the previous order have been removed and stored propery" />
+        <InputListItem label="Clear area of packaging, approved product, partials, and scrap (Finished Goods and WIP)">
+            <CheckBox state="true" />
         </InputListItem>
-        <InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-            <Switch state="true" />
+        <InputListItem label="Remove and file Mold Process Guide if used">
+            <CheckBox state="true" />
         </InputListItem>
-        <InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-            <Switch state="true" />
+        <InputListItem label="Remove Raw Materials from Work Center and Place in Designated Return Area">
+            <CheckBox state="true" />
         </InputListItem>
-        <InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-            <Switch state="true" />
+        <InputListItem label="Clear previous Process Order docs and file in QA Lab, if applicable">
+            <CheckBox state="true" />
         </InputListItem>
-
-
-<InputListItem>
-    <Text text="Confirm ALL these items from the previous order have been removed and stored propery" />
-</InputListItem>
-<InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-    <Switch state="true" />
-</InputListItem>
-<InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-    <Switch state="true" />
-</InputListItem>
-<InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-    <Switch state="true" />
-</InputListItem>
-
-<InputListItem>
-    <Text text="Confirm ALL these items from the previous order have been removed and stored propery" />
-</InputListItem>
-<InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-    <Switch state="true" />
-</InputListItem>
-<InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-    <Switch state="true" />
-</InputListItem>
-<InputListItem label="Confirm ALL these items from the previous order have been removed and stored propery">
-    <Switch state="true" />
-</InputListItem>
-
-
-
+        <InputListItem label="Remove and store reference samples if applicable">
+            <CheckBox state="true" />
+        </InputListItem>
   </List>
 </core:FragmentDefinition>
