@@ -22,17 +22,17 @@ sap.ui.jsview("com.jbl.lnclr.tab.view.Home", {
               mainPanel.addContent(new sap.m.Text({text:"Enter Data"}).addStyleClass("eDataLabel"));
              
               //2. display LC status bar
-              var lcStatusBar = new sap.m.Bar({contentLeft: new sap.m.Text("lctypefld",{text:"Select Line Clearance Type"}).addStyleClass("lcTypeLabel"),contentRight:new sap.m.Image({src:"img/downarrow.jpg",press:oController.handleLCType,height:"40px"}).addStyleClass("selArrow") }).addStyleClass("lcTypeBar");
+              var lcStatusBar = new sap.m.Bar({contentLeft: new sap.m.Text("lctypefld",{text:"Select Line Clearance Type"}).addStyleClass("lcTypeLabel"),contentRight:new sap.m.Button({icon:"sap-icon://navigation-down-arrow",press:oController.handleLCType}).addStyleClass("selArrow") }).addStyleClass("lcTypeBar");
                   mainPanel.addContent(lcStatusBar);
               
               //3. display barcode scanner section
-              var scanBar = new sap.m.Bar({contentLeft: new sap.m.Text({text:"Barcode Scanner"}).addStyleClass("scanLabel"),contentRight:new sap.m.Image({src:"img/rightarrow.png",height:"40px",press:oController.barcodescan}).addStyleClass("scanArrow") }).addStyleClass("scanbar");
+              var scanBar = new sap.m.Bar({contentLeft: new sap.m.Text({text:"Barcode Scanner"}).addStyleClass("scanLabel"),contentRight:new sap.m.Button({icon:"sap-icon://navigation-right-arrow",press:oController.barcodescan}).addStyleClass("scanArrow") }).addStyleClass("scanbar");
                   mainPanel.addContent(scanBar);
               
               //add label to page
               page.addContent(mainPanel);
               
-               alert("2");
+              // alert("2");
               return page;
               
               }

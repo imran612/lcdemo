@@ -26,11 +26,14 @@ body{background-image:none!important;background:none repeat scroll 0 0 #B4C5DA!i
  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }*/
+.selArrow >.sapMBtnDefault >.sapMBtnIcon, .scanArrow >.sapMBtnDefault >.sapMBtnIcon {
+  color: #a96018 !important;
+}
 .jblLogo {
   margin-bottom: 28px;
   margin-left:10px;
 }
-#pageHdr1 {
+#pageHdr1,#pageHdr2,#pageHdr3 {
    margin-top:18px;
    background-color: #a96018 !important;
    height:3em !important;
@@ -51,17 +54,26 @@ margin-top: -15px;*/
   color: #a96018 !important;
   font-size: 2rem !important;
 }
-#mainPanel{
+#mainPanel,#poDetailPanel{
   margin-left:20px;
  margin-top:50px;
 }
-
-#mainPanel > .sapMPanelBG {
+#poQslPanel {
+  margin-top: 20px !important;
+  margin-left:20px !important;
+}
+#mainPanel > .sapMPanelBG,#poDetailPanel > .sapMPanelBG,#poQslPanel > .sapMPanelBG {
   background-color: #F7E3B3 !important;
 }
 .lcTypeBar {
   background-color: #fff !important;
   margin-top: 50px;
+  height:5rem !important;
+  border-radius: 10px;
+}
+.quesBar {
+  background-color: #fff !important;
+  margin-top: 80px;
   height:5rem !important;
   border-radius: 10px;
 }
@@ -74,11 +86,11 @@ font-size: 1.5rem !important;
 margin-top:20px !important;
 }
 .selArrow {
-  margin-top:15px;
+  margin-top:10px !important;
   margin-right:20px !important;
 }
 .scanArrow {
-  margin-top:30px;
+  margin-top:30px !important;
   margin-right:20px !important;
 }
 .scanbar {
@@ -98,6 +110,33 @@ font-size: 1.5rem !important;
 .sapMPanelContent {
  border: none !important;
 }
+.canbtn {
+  float: right;
+  margin-top:50px !important;
+}
+.canbtn > .sapMBtnInner {
+  border-radius: 10px !important;
+  color:#5089ab !important;
+  font-weight: bold !important;
+}
+.procQsPanel {
+background-color: #a96018;
+color:white;
+text-transform: none;
+margin-top:20px;
+font-weight: bold;
+}
+.procQsPanel > .sapMPanelContent {
+ padding: 0 !important;
+}
+.sapMILILabel {
+font-size: 1rem !important;
+max-width: 90% !important;
+color: #5089ab !important;
+font-weight: normal !important;
+white-space: normal !important;
+}
+
 /*
 #RGLYT {
    background-color: rgb(35, 35, 242);
@@ -150,15 +189,14 @@ background-color:grey;
 color:white;
 }
 #documentList,#lcDocProcPanel {
- width: 95% !important;
- margin-left:20px;
-  margin-top:10px;
+  margin-top:50px;
 }
 #documentList-header {
   background-color: rgb(133, 133, 239);
 }
 #documentList-listUl {
  background-color: white !important;
+ border-radius: 10px;
 }
 #lcDocProcDetail {
  background-color: green;
@@ -173,40 +211,11 @@ padding: 10px;
 text-transform: lowercase;
 font-size: 0.95rem;
 }
-#procQues-header {
-  background-color: grey;
-  color:white;
-}
-/*
-#quesSubHdr {
-  background-color: #D2D9DC;
-}
-li#quesSubHdr > div > label {
-  color: blue !important;
-  font-size: 0.75em !important;
-}*/
 
-div#procQues > ul li:first-child {
-   background-color: #D2D9DC;
-}
 
-div#procQues span {
-  color: blue !important;
-  font-size: 0.85em !important;
-  text-transform: none;
-  float:left;
-  margin-left: -15px;
-}
-div#procQues div>label {
-  max-width: none !important;
-}
 
-.quItm {
-  font-size: 0.56em!important;
-}
-.sapMILILabel {
-  font-size: 0.66em!important;
-}
+
+
 #remark, #esignlabel {
  color:blue;
 margin-top:10px;
@@ -247,11 +256,7 @@ div#documentList > div {
 #lcDocProcPanel > .sapMPanelHdr {
   background-color: rgb(117, 117, 185) !important;
 }
-.procQsPanel {
-  background-color: rgb(126, 132, 127);
-  color:white;
-  text-transform: none;
-}
+
 #__item6,#__item10,#__item14 {
  background-color: #D2D9DC;
 }

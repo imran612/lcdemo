@@ -6,21 +6,8 @@
 	xmlns="sap.m">
 	<Table id="documentList"
 		items="{/orders}">
-		<headerToolbar>
-			<Toolbar>
-				<Label class="lcTableTile" text="Line Clearance Document List"></Label>
-				<ToolbarSpacer></ToolbarSpacer>
-				<!--  Add the Personalization button -->
-				<Button class="crtBtn" text="Create" press="handleProcDetail" />
-                <Button text="Edit" press="handleProcDetail" />
-                <Button text="Refresh" />
-				<!--  Add the Personalization button -->
-				<Button icon="sap-icon://action-settings" press="handleProcTableSetting" />
-			</Toolbar>
-		</headerToolbar>
+	
 		<columns>
-            <Column id="productColSel"><Text text="" /></Column>
-			<Column id="productCol" width="12em"><Text text="Process Order" /></Column>
 			<Column id="supplierCol" minScreenWidth="Tablet" demandPopin="true"><Text text="Work Center" /></Column>
 			<Column id="dimensionsCol" minScreenWidth="Tablet" demandPopin="true"><Text text="LC Status" /></Column>
 			<Column id="weightCol" minScreenWidth="Tablet" demandPopin="true"><Text text="Material" /></Column>
@@ -29,8 +16,6 @@
 		<items>
 			<ColumnListItem>
 				<cells>
-					<CheckBox />
-                    <ObjectIdentifier title="{order}" class="sapMTableContentMargin" />
 					<Text text="{wc}" />
 					<Text text="{lcstatus}" />
 					<Text text="{mat}" />
