@@ -58,12 +58,11 @@ margin-top: -15px;*/
   margin-left:20px;
  margin-top:50px;
 }
-#poQslPanel,#eSignPanel {
+#poQslPanel {
   margin-top: 20px !important;
   margin-left:20px !important;
 }
 #eSignPanel {
-  margin-top: 10px !important;
   margin-left:40px !important;
   margin-right:40px !important;
 }
@@ -71,7 +70,8 @@ margin-top: -15px;*/
   background-color: #F7E3B3 !important;
 }
 #eSignPanelTxt {
-  margin-left:20px !important;
+  margin-left:40px !important;
+  margin-top: 20px !important;
 }
 
 .lcTypeBar {
@@ -79,9 +79,11 @@ margin-top: -15px;*/
   height:5rem !important;
   border-radius: 10px;
 }
+.seqNo4 {
+ margin-top: 80px;
+}
 .quesBar {
   background-color: #fff !important;
-  margin-top: 80px;
   height:5rem !important;
   border-radius: 10px;
 }
@@ -130,7 +132,6 @@ font-size: 1.5rem !important;
 background-color: #a96018;
 color:white;
 text-transform: none;
-margin-top:20px;
 font-weight: bold;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
@@ -150,7 +151,7 @@ border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.procQsPanel > .sapMPanelContent, .procQsPanelList > .sapMPanelContent, .procQsPanelListFinal > .sapMPanelContent, .eSignPanel > .sapMPanelContent,section#cancelPanel > .sapMPanelContent {
+.procQsPanel > .sapMPanelContent, .procQsPanelList > .sapMPanelContent, .procQsPanelListFinal > .sapMPanelContent, .eSignPanel > .sapMPanelContent,section#cancelPanel > .sapMPanelContent,#eSignPanelTxt > .sapMPanelContent {
  padding: 0 !important;
 }
 section#eSignPanel > .sapMPanelContent {
@@ -177,12 +178,17 @@ text-align: center !important;
 font-weight: bold;
 font-size: 2rem !important;
 margin-top: 50px;
-border-top-left-radius: 50px;
-border-top-right-radius: 50px;
+border-top-left-radius: 60px;
+border-top-right-radius: 60px;
 margin-left:5px;
+height: 55px;
+padding-top: 10px;
 }
 .seqNo2 {
   margin-top:100px !important;
+}
+.seqNo5,.seqNo6 {
+ margin-top: 20px !important;
 }
 /*
 #RGLYT {

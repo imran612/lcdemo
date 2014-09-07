@@ -2,6 +2,7 @@
 sap.ui.controller("com.jbl.lnclr.tab.view.ProcessQs", {
                   
             onInit: function () {
+                  sap.ui.getCore().byId("ProcessQs").setModel(lcmod);
                   },
                   
                   handleCancel: function () {

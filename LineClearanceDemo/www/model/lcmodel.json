@@ -40,5 +40,32 @@
              
              }
     
-    ]
+    ],
+    "ques1": [
+             {
+             "qu": "Clear area of packaging, approved product, partials, and scrap (Finished Goods and WIP)",
+              "sel": "true"
+             
+             },
+              {
+              "qu": "Remove and file Mold Process Guide if used",
+              "sel": "true"
+              
+              },
+              {
+              "qu": "Remove Raw Materials from Work Center and Place in Designated Return Area",
+              "sel": "true"
+              
+              },
+              {
+              "qu": "Clear previous Process Order docs and file in QA Lab, if applicable",
+              "sel": "true"
+              
+              },
+              {
+              "qu": "Remove and store reference samples if applicable",
+              "sel": "false"
+              
+              }
+             ]
 }

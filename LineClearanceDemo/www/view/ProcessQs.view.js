@@ -20,8 +20,10 @@ sap.ui.jsview("com.jbl.lnclr.tab.view.ProcessQs", {
               
               //1. initialize panel to hold main page content
               var poQslPanel = new sap.m.Panel("poQslPanel",{width:"95%"});
-              poQslPanel.addContent(new sap.m.Text({text:"Process Questionnaires"}).addStyleClass("eDataLabel"));
+              poQslPanel.addContent(new sap.m.Text({text:"Process Questionnaires",width:"100%"}).addStyleClass("eDataLabel"));
               
+              //display sequence
+              poQslPanel.addContent(new sap.m.Text({text:"5"}).addStyleClass("seqNo seqNo5"));
               //Question#1
               var q1 = new sap.m.Panel({headerText:"Confirm ALL these items from the previous order have been removed and stored propery",expandable:true,expanded:true}).addStyleClass("procQsPanel");
               q1.addContent(sap.ui.xmlfragment("com.jbl.lnclr.tab.view.fragment.Questions",oController));
@@ -45,7 +47,10 @@ sap.ui.jsview("com.jbl.lnclr.tab.view.ProcessQs", {
               
               //esign section
               var eSignPanelTxt = new sap.m.Panel("eSignPanelTxt",{width:"95%"});
-              eSignPanelTxt.addContent(new sap.m.Text({text:"e-Sign Operation and Quality"}).addStyleClass("eDataLabel"));
+              eSignPanelTxt.addContent(new sap.m.Text({text:"e-Sign Operation and Quality",width:"100%"}).addStyleClass("eDataLabel"));
+              
+              eSignPanelTxt.addContent(new sap.m.Text({text:"6"}).addStyleClass("seqNo seqNo6"));
+              
               page.addContent(eSignPanelTxt);
               
               var eSignPanel = new sap.m.Panel("eSignPanel",{width:"90%"});
