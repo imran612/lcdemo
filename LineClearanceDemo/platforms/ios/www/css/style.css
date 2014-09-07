@@ -58,16 +58,24 @@ margin-top: -15px;*/
   margin-left:20px;
  margin-top:50px;
 }
-#poQslPanel {
+#poQslPanel,#eSignPanel {
   margin-top: 20px !important;
   margin-left:20px !important;
 }
-#mainPanel > .sapMPanelBG,#poDetailPanel > .sapMPanelBG,#poQslPanel > .sapMPanelBG {
+#eSignPanel {
+  margin-top: 10px !important;
+  margin-left:40px !important;
+  margin-right:40px !important;
+}
+#mainPanel > .sapMPanelBG,#poDetailPanel > .sapMPanelBG,#poQslPanel > .sapMPanelBG, #eSignPanelTxt > .sapMPanelBG {
   background-color: #F7E3B3 !important;
 }
+#eSignPanelTxt {
+  margin-left:20px !important;
+}
+
 .lcTypeBar {
   background-color: #fff !important;
-  margin-top: 50px;
   height:5rem !important;
   border-radius: 10px;
 }
@@ -96,7 +104,6 @@ margin-top:20px !important;
 .scanbar {
  height:8rem !important;
 background-color:#fff !important;
-margin-top:100px !important;
 border-radius: 10px;
 }
 .scanLabel {
@@ -125,10 +132,32 @@ color:white;
 text-transform: none;
 margin-top:20px;
 font-weight: bold;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
 }
-.procQsPanel > .sapMPanelContent {
+.procQsPanelList {
+    background-color: #a96018;
+    color:white;
+    text-transform: none;
+    font-weight: bold;
+}
+.procQsPanelListFinal {
+    background-color: #a96018;
+    color:white;
+    text-transform: none;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.procQsPanel > .sapMPanelContent, .procQsPanelList > .sapMPanelContent, .procQsPanelListFinal > .sapMPanelContent, .eSignPanel > .sapMPanelContent,section#cancelPanel > .sapMPanelContent {
  padding: 0 !important;
 }
+section#eSignPanel > .sapMPanelContent {
+   padding: 0 !important;
+   border-radius: 10px;
+}
+
 .sapMILILabel {
 font-size: 1rem !important;
 max-width: 90% !important;
@@ -136,7 +165,25 @@ color: #5089ab !important;
 font-weight: normal !important;
 white-space: normal !important;
 }
-
+.eSignFld {
+  margin-left:10px;
+margin-bottom: 10px;
+}
+.seqNo {
+width:100px;
+background-color:#F1EFEB;
+color:#e6d4c2;
+text-align: center !important;
+font-weight: bold;
+font-size: 2rem !important;
+margin-top: 50px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+margin-left:5px;
+}
+.seqNo2 {
+  margin-top:100px !important;
+}
 /*
 #RGLYT {
    background-color: rgb(35, 35, 242);
@@ -224,14 +271,23 @@ margin-top:10px;
 #remTxtArea {
   width: 100%;
 }
-#eSignTxt1 {
-color: red;
+.eSignTxt1 {
+color: #743C04;
 font-weight: bold;
 padding-bottom: 20px;
+padding-left:10px;
+padding-right:10px;
+padding-top:10px;
 }
-#eSignTxt2, #eSignTxt3 {
-color:blue;
-padding-bottom:5px;
+.eSignTxt2 {
+color:#592E03;
+padding-left:10px;
+font-weight: bold;
+}
+.eSignTxt3 {
+color:#743C04;
+padding-left:10px;
+padding-bottom: 10px;
 }
 #hLyt {
  padding-top: 20px;
@@ -256,10 +312,11 @@ div#documentList > div {
 #lcDocProcPanel > .sapMPanelHdr {
   background-color: rgb(117, 117, 185) !important;
 }
-
+/*
 #__item6,#__item10,#__item14 {
  background-color: #D2D9DC;
-}
+}*/
+
 /*#__panel0-CollapsedImg {
 background-color: rgb(189, 200, 207);
 }*/

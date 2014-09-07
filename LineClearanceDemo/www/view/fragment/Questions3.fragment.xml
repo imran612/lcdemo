@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+     xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+	<List>
+        <InputListItem label="Sanitize product contact surface with disinfectant">
+            <CheckBox state="true" />
+        </InputListItem>
+        <InputListItem label="Ensure no tools or cleaning equipment are left in the work center">
+            <CheckBox state="true" />
+        </InputListItem>
+        <InputListItem label="Clear machine of parts and runners. Wipe totes and conveyors">
+        <CheckBox state="true" />
+        </InputListItem>
+        <InputListItem label="Clean hoppers, feed lines, grinders and gaylord covers">
+        <CheckBox state="true" />
+        </InputListItem>
+    </List>
+</core:FragmentDefinition>
