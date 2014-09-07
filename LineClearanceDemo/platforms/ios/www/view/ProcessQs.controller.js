@@ -4,23 +4,21 @@ sap.ui.controller("com.jbl.lnclr.tab.view.ProcessQs", {
             onInit: function () {
                   },
                   
-                  handleNavBack: function () {
+                  handleCancel: function () {
                   var nav = sap.ui.getCore().byId("Home").getController().nav;
-                  nav.back("DocumentList");
+                  nav.back("Home");
                   
                   },
-                  handleSettings: function () {
+                  handleNavBack: function () {
+                  var nav = sap.ui.getCore().byId("ProcessDetail").getController().nav;
+                  nav.back("ProcessDetail");
                   
                   },
                   handleESignDialog: function () {
-                 // alert("f");
                   var oModel1 = new sap.ui.model.json.JSONModel();
                   this._eSignD = sap.ui.xmlfragment("com.jbl.lnclr.tab.view.fragment.ESignDialog",
-                                                     sap.ui.getCore().byId("DocumentProc").getController()
+                                                     sap.ui.getCore().byId("ProcessQs").getController()
                                                     );
-                  // this.getView().addDependent(this._valueHelpDialog);
-                  //}
-                  //this._valueHelpDialog.setModel(oModel);
                   // open value help dialog
                   oModel1.eSign= this._eSignD;
                   sap.ui.getCore().setModel(oModel1,"eSignModel");

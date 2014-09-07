@@ -12,7 +12,7 @@ sap.ui.jsview("com.jbl.lnclr.tab.view.ProcessDetail", {
                                         });
 
               
-              page.setCustomHeader(new sap.m.Bar("pageHdr2",{contentLeft: [new sap.m.Button({icon:"sap-icon://nav-back",press:oController.handleNavBack}),new sap.m.Image({src:"img/jabil-logo.jpg",height:"30px"}).addStyleClass("nyLogo")],contentRight:[new sap.m.Text({text:"Welcome Morgan"}).addStyleClass("welHdr"),new sap.m.Button({icon:"sap-icon://log"}) ]}));
+              page.setCustomHeader(new sap.m.Bar("pageHdr2",{contentLeft: [new sap.m.Button({icon:"sap-icon://nav-back",press:oController.handleNavBack}),new sap.m.Image({src:"img/nypro-ls-logo.png"}).addStyleClass("nyLogo")],contentRight:[new sap.m.Text({text:"Welcome Morgan"}).addStyleClass("welHdr"),new sap.m.Button({icon:"sap-icon://log"}) ]}));
               
               //display jbl logo
               page.addContent(new sap.m.Bar({contentLeft:new sap.m.Image({src:"img/jabil-logo.jpg",height:"20px"}).addStyleClass("jblLogo")}).addStyleClass("subHdrBar"));
