@@ -44,28 +44,74 @@
     "ques1": [
              {
              "qu": "Clear area of packaging, approved product, partials, and scrap (Finished Goods and WIP)",
-              "sel": "true"
+              "sel": true
              
              },
               {
               "qu": "Remove and file Mold Process Guide if used",
-              "sel": "true"
+              "sel": true
               
               },
               {
               "qu": "Remove Raw Materials from Work Center and Place in Designated Return Area",
-              "sel": "true"
+              "sel": true
               
               },
               {
               "qu": "Clear previous Process Order docs and file in QA Lab, if applicable",
-              "sel": "true"
+              "sel": false
               
               },
               {
               "qu": "Remove and store reference samples if applicable",
-              "sel": "false"
+              "sel": false
               
               }
-             ]
+             ],
+    "ques2": [
+              {
+              "qu": "Collect start up shots and forward to Quality",
+              "sel": true
+              
+              },
+              {
+              "qu": "Collect last shot pulled and forward to Quality",
+              "sel": false
+              
+              }
+              ],
+    "ques3": [
+              {
+              "qu": "Sanitize product contact surface with disinfectant",
+              "sel": true
+              
+              },
+              {
+              "qu": "Ensure no tools or cleaning equipment are left in the work center",
+              "sel": false
+              
+              },
+              {
+              "qu": "Clear machine of parts & runners. Wipe totes & conveyors",
+              "sel": false
+              
+              },
+              {
+              "qu": "Clean hoppers, feed lines, grinders and gaylord covers",
+              "sel": false
+              
+              }
+              ],
+    "ques4": [
+              {
+              "qu": "Are personnel wearing proper attire per Mfg requirements?",
+              "sel": true
+              
+              },
+              {
+              "qu": "Are personnel wearing proper PPE per Mfg requirements?",
+              "sel": false
+              
+              }
+              ]
 }

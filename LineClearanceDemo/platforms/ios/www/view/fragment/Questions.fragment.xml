@@ -7,7 +7,7 @@
         }" >
         
         <InputListItem label="{qu}">
-            <CheckBox state="{sel}" />
+            <CheckBox selected="{sel}" select="handleQCheck" />
         </InputListItem>
     </List>
 </core:FragmentDefinition>

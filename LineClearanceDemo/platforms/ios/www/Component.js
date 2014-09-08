@@ -25,6 +25,7 @@ sap.ui.core.UIComponent.extend("com.jbl.lnclr.tab.Component", {
 
 		// Using a local model for offline development
         lcmod = new sap.ui.model.json.JSONModel("model/lcmodel.json");
+        lcmod.setDefaultBindingMode("TwoWay");
            sap.ui.getCore().setModel(lcmod);
 		/*var oModel = new sap.ui.model.json.JSONModel("model/mock.json");
 		oView.setModel(oModel);

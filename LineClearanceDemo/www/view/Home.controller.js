@@ -3,8 +3,13 @@ var _valueHelpDialog;
 sap.ui.controller("com.jbl.lnclr.tab.view.Home", {
                   
             onInit: function () {
+                 // alert("11");
                  },
+                  onAfterRendering: function() {
+                  //alert("after");
+                  },
                 handleLCType: function (oController) {
+                  //alert("in handle");
                   this._valueHelpDialog = sap.ui.xmlfragment(
                                                              "com.jbl.lnclr.tab.view.fragment.Dialog",
                                                               sap.ui.getCore().byId("Home").getController()
@@ -48,16 +53,33 @@ function scan() {
     cordova.plugins.barcodeScanner.scan(
                                         function (result) {
                                         jQuery.sap.require("sap.m.MessageToast");
-                                        lcmod.barcode=result.text;
+                                        var barmodel = new sap.ui.model.json.JSONModel();
+                                        barmodel.barcode=result.text;
+                                        sap.ui.getCore().setModel(barmodel,"barmod");
+                                        barvalue=result.text;
+                                        //alert(result.text);
+                                        //alert(lcmod.getData().barcode);
                                         sap.ui.getCore().byId("Home").getController().nav.to("ProcessDetail");
 
                                         
                                         },
                                         function (error) {
                                         alert("Scanning failed: " + error);
+                                        var barmodel = new sap.ui.model.json.JSONModel();
+                                        barmodel.barcode="123456";
+                                        sap.ui.getCore().setModel(barmodel,"barmod");
                                         sap.ui.getCore().byId("Home").getController().nav.to("ProcessDetail");
                                         }
                                         );
     
 
 }
+/*function handleLCTypeSel() {
+    this._valueHelpDialog = sap.ui.xmlfragment(
+                                               "com.jbl.lnclr.tab.view.fragment.Dialog",
+                                               sap.ui.getCore().byId("Home").getController()
+                                               );
+    this._valueHelpDialog.setModel(lcmod);
+    // open value help dialog
+    this._valueHelpDialog.open();
+}*/

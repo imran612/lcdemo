@@ -28,7 +28,13 @@ body{background-image:none!important;background:none repeat scroll 0 0 #B4C5DA!i
 }*/
 .selArrow >.sapMBtnDefault >.sapMBtnIcon, .scanArrow >.sapMBtnDefault >.sapMBtnIcon {
   color: #a96018 !important;
+  font-size: 3.5rem !important;
+width:10rem !important;;
 }
+.sapMBtnIcon,.sapMPanelExpandableIcon {
+  color:#fff !important;
+}
+
 .jblLogo {
   margin-bottom: 28px;
   margin-left:10px;
@@ -100,7 +106,7 @@ margin-top:20px !important;
   margin-right:20px !important;
 }
 .scanArrow {
-  margin-top:30px !important;
+  margin-top:35px !important;
   margin-right:20px !important;
 }
 .scanbar {
@@ -166,9 +172,17 @@ color: #5089ab !important;
 font-weight: normal !important;
 white-space: normal !important;
 }
+.sapMTB-Transparent-CTX .sapMText {
+  text-shadow: none !important;
+  color: #fff !important;
+}
 .eSignFld {
   margin-left:10px;
 margin-bottom: 10px;
+}
+.lcmaintile {
+  width: 100% !important;
+  height:5rem !important;
 }
 .seqNo {
 width:100px;

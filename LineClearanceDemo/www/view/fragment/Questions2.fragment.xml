@@ -1,14 +1,13 @@
 <core:FragmentDefinition
 	xmlns="sap.m"
-     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core">
-	<List>
+	<List items="{
+        path: '/ques2'
+        }" >
         
-        <InputListItem label="Collect start up shots and forward to Quality">
-            <CheckBox state="true" />
-        </InputListItem>
-        <InputListItem label="Collect last shot pulled and forward to Quality">
-            <CheckBox state="true" />
+        <InputListItem label="{qu}">
+            <CheckBox selected="{sel}" select="handleQ2Check" />
         </InputListItem>
     </List>
 </core:FragmentDefinition>
