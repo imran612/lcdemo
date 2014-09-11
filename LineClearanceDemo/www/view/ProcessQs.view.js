@@ -23,16 +23,21 @@ sap.ui.jsview("com.jbl.lnclr.tab.view.ProcessQs", {
               var poQslPanel = new sap.m.Panel("poQslPanel",{width:"95%"});
               poQslPanel.addContent(new sap.m.Text({text:"Process Questionnaires",width:"100%"}).addStyleClass("eDataLabel"));
               
+                           
               //display sequence
               poQslPanel.addContent(new sap.m.Text({text:"5"}).addStyleClass("seqNo seqNo5"));
               //Question#1
               var q1Selbx = new sap.m.Toolbar({content:[new sap.m.Text({text:"Confirm ALL these items from the previous order have been removed"})]  });
               
-                           /* var q1Selbx = new sap.m.Toolbar({content:[new sap.m.Text({text:"Confirm ALL these items from the previous order have been removed"}),new sap.m.ToolbarSpacer(),new sap.m.Text("q1selbx",{text:"11"}).addStyleClass("notsel"),new sap.m.Text("q2selbx",{text:"11"}).addStyleClass("notsel"),new sap.m.Text("q3selbx",{text:"11"}).addStyleClass("notsel")]  });*/
-              
               var q1 = new sap.m.Panel("q1panel",{headerToolbar: q1Selbx,expandable:true,expanded:true}).addStyleClass("procQsPanel");
-              /*var q1 = new sap.m.Panel("q1panel",{headerText:"Confirm ALL these items from the previous order have been removed",headerToolbar: q1Selbx,expandable:true,expanded:true}).addStyleClass("procQsPanel");*/
               q1.addContent(sap.ui.xmlfragment("com.jbl.lnclr.tab.view.fragment.Questions",oController));
+              q1Selbx.attachBrowserEvent("click", function(q1event) {
+                                    //alert(this);
+                                    if(q1.getExpanded())
+                                        q1.setExpanded(false);
+                                    else
+                                    q1.setExpanded(true);
+                                    });
               poQslPanel.addContent(q1);
               
               //Question#2
