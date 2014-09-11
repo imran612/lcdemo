@@ -12,7 +12,7 @@ sap.ui.jsview("com.jbl.lnclr.tab.view.ProcessDetail", {
                                         });
 
               
-              page.setCustomHeader(new sap.m.Bar("pageHdr2",{contentLeft: [new sap.m.Button({icon:"sap-icon://nav-back",press:oController.handleNavBack}),new sap.m.Image({src:"img/nypro-ls-logo.png"}).addStyleClass("nyLogo")],contentRight:[new sap.m.Text({text:"Welcome Guest"}).addStyleClass("welHdr"),new sap.m.Button({icon:"sap-icon://log"}) ]}));
+              page.setCustomHeader(new sap.m.Bar("pageHdr2",{contentLeft: new sap.m.Button({icon:"sap-icon://nav-back",press:oController.handleNavBack}),contentMiddle:new sap.m.Image({src:"img/nypro-ls-logo.png"}).addStyleClass("nyLogo"),contentRight:[new sap.m.Text({text:"Welcome Guest"}).addStyleClass("welHdr"),new sap.m.Button({icon:"sap-icon://log"}) ]}));
               
               //display jbl logo
               page.addContent(new sap.m.Bar({contentLeft:new sap.m.Image({src:"img/jabil-logo.jpg",height:"20px"}).addStyleClass("jblLogo")}).addStyleClass("subHdrBar"));
@@ -23,17 +23,20 @@ sap.ui.jsview("com.jbl.lnclr.tab.view.ProcessDetail", {
               //display sequence
               poDetailPanel.addContent(new sap.m.Text({text:"3"}).addStyleClass("seqNo"));
               poDetailPanel.addContent(sap.ui.xmlfragment("com.jbl.lnclr.tab.view.fragment.DocumentTable",oController));
-             // alert("in det");
+               //alert("in det");
               var brdata = sap.ui.getCore().getModel("barmod");
-              
-              var toolPD = new sap.m.Toolbar("procDetTB",{content:[new sap.m.Label({text:"Process Order:"}), new sap.m.Text({text:barvalue}), new sap.m.ToolbarSpacer(), new sap.m.Label({text:"Plant:"}),new sap.m.Text({text:"IL01"}),new sap.m.ToolbarSpacer(), new sap.m.Label({text:"LC Status:"}),new sap.m.Text({text:"New"})   ]  });
+              //alert(barvalue);
+              var porder=new sap.m.Text("barscan",{text:barvalue});
+               porder.setModel(lcmod);
+              var toolPD = new sap.m.Toolbar("procDetTB",{content:[new sap.m.Label({text:"Process Order:"}), porder, new sap.m.ToolbarSpacer(), new sap.m.Label({text:"Plant:"}),new sap.m.Text({text:"IL01"}),new sap.m.ToolbarSpacer(), new sap.m.Label({text:"LC Status:"}),new sap.m.Text({text:"New"})   ]  });
+             
                   poDetailPanel.addContent(toolPD);
               
               //display sequence
               poDetailPanel.addContent(new sap.m.Text({text:"4"}).addStyleClass("seqNo seqNo4"));
               //display process questionair section
-              var quesBar = new sap.m.Bar({contentLeft: new sap.m.Text({text:"Process Questionnaires"}).addStyleClass("lcTypeLabel"),contentRight:new sap.m.Button({icon:"sap-icon://navigation-right-arrow",press:oController.handleQsNav}).addStyleClass("selArrow")}).addStyleClass("quesBar");
-                  poDetailPanel.addContent(quesBar);
+              var quesBar = new sap.m.Bar({contentLeft: new sap.m.Text({text:"Process Questionnaires"}).addStyleClass("lcTypeLabel"),contentRight:new sap.m.Button({icon:"sap-icon://navigation-right-arrow"}).addStyleClass("selArrow")}).addStyleClass("quesBar");
+                  poDetailPanel.addContent(new sap.m.CustomTile({content:quesBar,press:oController.handleQsNav}).addStyleClass("lcmaintile"));
               
               //display cancel button
               poDetailPanel.addContent(new sap.m.Button({text:"Cancel",press:oController.handleNavBack}).addStyleClass("canbtn"));

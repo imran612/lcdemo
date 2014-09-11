@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+	<List items="{
+        path: '/ques2'
+        }" >
+        
+        <InputListItem label="{qu}">
+            <CheckBox selected="{sel}" select="handleQ2Check" />
+        </InputListItem>
+    </List>
+</core:FragmentDefinition>

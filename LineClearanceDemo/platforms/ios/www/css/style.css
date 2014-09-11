@@ -19,6 +19,13 @@ body{background-image:none!important;background:none repeat scroll 0 0 #B4C5DA!i
 .sapMText {
  text-transform: none !important;
 }
+.sapMListTbl .sapMText {
+  padding-top: 1px;
+font-size: 15pt !important;
+color: #333333;
+font-weight: normal;
+font-family: Arial !important;
+}
 /*.sapMBar {
  color: #FFF !important;
  background-color: transparent !important;
@@ -28,11 +35,12 @@ body{background-image:none!important;background:none repeat scroll 0 0 #B4C5DA!i
 }*/
 .selArrow >.sapMBtnDefault >.sapMBtnIcon, .scanArrow >.sapMBtnDefault >.sapMBtnIcon {
   color: #a96018 !important;
-  font-size: 3.5rem !important;
-width:10rem !important;;
+font-size: 34pt !important;
+width:5rem !important;
 }
 .sapMBtnIcon,.sapMPanelExpandableIcon {
   color:#fff !important;
+  font-size: 15pt !important;
 }
 
 .jblLogo {
@@ -58,7 +66,8 @@ margin-top: -15px;*/
 }
 .eDataLabel {
   color: #a96018 !important;
-  font-size: 2rem !important;
+  font-size: 48pt !important;
+font-style: Arial !important;
 }
 #mainPanel,#poDetailPanel{
   margin-left:20px;
@@ -94,16 +103,23 @@ margin-top: -15px;*/
   border-radius: 10px;
 }
 .lcTypeLabel {
-color:#5089ab !important;
+/*color:#5089ab !important;
 padding-left:30px !important;
 font-weight: bold !important;
 font-family: arial !important;
 font-size: 1.5rem !important;
-margin-top:20px !important;
+margin-top:20px !important;*/
+
+color:#5089ab !important;
+padding-left:30px !important;
+font-weight: bold !important;
+font-family: arial !important;
+font-size: 26pt !important;
+margin-top:15px !important;
 }
 .selArrow {
   margin-top:10px !important;
-  margin-right:20px !important;
+  /*margin-right:20px !important;*/
 }
 .scanArrow {
   margin-top:35px !important;
@@ -115,12 +131,12 @@ background-color:#fff !important;
 border-radius: 10px;
 }
 .scanLabel {
-  margin-top:50px !important;
-  color:#5089ab !important;
+margin-top:35px !important;
+color:#5089ab !important;
 padding-left:30px !important;
 font-weight: bold !important;
 font-family: arial !important;
-font-size: 1.5rem !important;
+font-size: 26pt !important;
 }
 .sapMPanelContent {
  border: none !important;
@@ -133,6 +149,8 @@ font-size: 1.5rem !important;
   border-radius: 10px !important;
   color:#5089ab !important;
   font-weight: bold !important;
+  font-family: arial;
+  font-size: 26pt !important;
 }
 .procQsPanel {
 background-color: #a96018;
@@ -166,7 +184,7 @@ section#eSignPanel > .sapMPanelContent {
 }
 
 .sapMILILabel {
-font-size: 1rem !important;
+/*font-size: 1rem !important;*/
 max-width: 90% !important;
 color: #5089ab !important;
 font-weight: normal !important;
@@ -175,6 +193,7 @@ white-space: normal !important;
 .sapMTB-Transparent-CTX .sapMText {
   text-shadow: none !important;
   color: #fff !important;
+  font-size: 15pt !important;
 }
 .eSignFld {
   margin-left:10px;
@@ -182,10 +201,24 @@ margin-bottom: 10px;
 }
 .lcmaintile {
   width: 100% !important;
-  height:5rem !important;
+  height:100% !important;
 }
 .seqNo {
-width:100px;
+
+width:125px;
+background-color:#Faf7f0;
+color:#e6d4c2;
+text-align: center !important;
+font-weight: bold;
+font-size: 54pt !important;
+margin-top: 50px;
+border-top-left-radius: 60px;
+border-top-right-radius: 60px;
+margin-left:10px;
+height: 75px;
+font-family: Arial !important;
+
+/*width:100px;
 background-color:#F1EFEB;
 color:#e6d4c2;
 text-align: center !important;
@@ -196,7 +229,7 @@ border-top-left-radius: 60px;
 border-top-right-radius: 60px;
 margin-left:5px;
 height: 55px;
-padding-top: 10px;
+padding-top: 10px;*/
 }
 .seqNo2 {
   margin-top:100px !important;
@@ -215,11 +248,17 @@ h4#selForm--title.sapUiFormTitle.sapUiFormTitleH4 {
  color:white;
  background-color: rgb(15, 85, 142);
 }
-.sapMLabel {
+.sapMLabel,#barscan {
  color: black !important;
-font-size: 12px !important;
-font-weight: bold;
+font-size: 12pt !important;
+font-weight: normal;
 }
+#__text16,#__text17 {
+font-family: arial !important;
+font-size: 12pt !important;
+}
+
+
 #selFormPanel {
  margin-left: 20px !important;
  margin-top:20px !important;
@@ -271,6 +310,7 @@ color:white;
 .sapMPanelHdr {
  color: white !important;
  text-shadow: none !important;
+ font-size: 15pt !important;
 }
 #infoTxt {
  background-color: white;
@@ -298,16 +338,22 @@ padding-bottom: 20px;
 padding-left:10px;
 padding-right:10px;
 padding-top:10px;
+font-size: 15pt !important;
+font-family: Arial !important;
 }
 .eSignTxt2 {
 color:#592E03;
 padding-left:10px;
 font-weight: bold;
+font-size: 15pt !important;
+font-family: Arial !important;
 }
 .eSignTxt3 {
 color:#743C04;
 padding-left:10px;
 padding-bottom: 10px;
+font-size: 15pt !important;
+font-family: Arial !important;
 }
 #hLyt {
  padding-top: 20px;

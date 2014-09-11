@@ -7,7 +7,11 @@ sap.ui.controller("com.jbl.lnclr.tab.view.ProcessDetail", {
                    sap.ui.getCore().byId("ProcessDetail").setModel(oGroupingModel, 'Grouping');
                   
                   },
-                  
+                  onAfterRendering: function() {
+                  //alert("after");
+                 
+                  //alert(lcmod.barscanval);
+                  },
                   handleNavBack: function () {
                   var nav = sap.ui.getCore().byId("Home").getController().nav;
                   nav.back("Home");

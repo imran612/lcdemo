@@ -3,7 +3,7 @@ var _valueHelpDialog;
 sap.ui.controller("com.jbl.lnclr.tab.view.Home", {
                   
             onInit: function () {
-                 // alert("11");
+                   //alert("11");
                  },
                   onAfterRendering: function() {
                   //alert("after");
@@ -52,13 +52,22 @@ function scan() {
     
     cordova.plugins.barcodeScanner.scan(
                                         function (result) {
+                                        barvalue="";
                                         jQuery.sap.require("sap.m.MessageToast");
                                         var barmodel = new sap.ui.model.json.JSONModel();
+                                        lcmod.barscanval=result.text;
                                         barmodel.barcode=result.text;
+                                        sap.ui.getCore().setModel(lcmod);
                                         sap.ui.getCore().setModel(barmodel,"barmod");
                                         barvalue=result.text;
+                                        console.log(barvalue);
                                         //alert(result.text);
                                         //alert(lcmod.getData().barcode);
+                                        if(sap.ui.getCore().byId("barscan")!=undefined)
+                                        {
+                                           sap.ui.getCore().byId("barscan").setText(result.text);
+                                        
+                                        }
                                         sap.ui.getCore().byId("Home").getController().nav.to("ProcessDetail");
 
                                         

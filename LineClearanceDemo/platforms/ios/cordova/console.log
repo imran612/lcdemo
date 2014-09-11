@@ -759,3 +759,52 @@ Terminating in response to SpringBoard's termination.
 2014-09-08 16:37:41.268 LineClearanceDemo[51388:70b] Unlimited access to network resources
 2014-09-08 16:37:42.180 LineClearanceDemo[51388:70b] Resetting plugins due to page load.
 2014-09-08 16:37:43.503 LineClearanceDemo[51388:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-08 16:40:40.148 LineClearanceDemo[54361:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-08 16:40:40.390 LineClearanceDemo[54361:70b] Unlimited access to network resources
+2014-09-08 16:40:42.123 LineClearanceDemo[54361:70b] Resetting plugins due to page load.
+2014-09-08 16:40:44.019 LineClearanceDemo[54361:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-09 10:12:50.502 LineClearanceDemo[57643:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-09 10:12:50.607 LineClearanceDemo[57643:70b] Unlimited access to network resources
+2014-09-09 10:12:51.302 LineClearanceDemo[57643:70b] Resetting plugins due to page load.
+2014-09-09 10:12:53.495 LineClearanceDemo[57643:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-09 10:18:17.023 LineClearanceDemo[60616:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-09 10:18:17.172 LineClearanceDemo[60616:70b] Unlimited access to network resources
+2014-09-09 10:18:18.335 LineClearanceDemo[60616:70b] Resetting plugins due to page load.
+2014-09-09 10:18:20.089 LineClearanceDemo[60616:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-09 10:19:40.095 LineClearanceDemo[63581:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-09 10:19:40.118 LineClearanceDemo[63581:70b] Unlimited access to network resources
+2014-09-09 10:19:40.733 LineClearanceDemo[63581:70b] Resetting plugins due to page load.
+2014-09-09 10:19:42.429 LineClearanceDemo[63581:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-09 10:25:32.567 LineClearanceDemo[69529:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-09 10:25:32.613 LineClearanceDemo[69529:70b] Unlimited access to network resources
+2014-09-09 10:25:33.135 LineClearanceDemo[69529:70b] Resetting plugins due to page load.
+2014-09-09 10:25:34.334 LineClearanceDemo[69529:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-09 12:47:47.398 LineClearanceDemo[69529:70b] THREAD WARNING: ['BarcodeScanner'] took '18.631836' ms. Plugin should use a background thread.
+2014-09-09 14:00:02.045 LineClearanceDemo[76649:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-09 14:00:02.221 LineClearanceDemo[76649:70b] Unlimited access to network resources
+2014-09-09 14:00:03.937 LineClearanceDemo[76649:70b] Resetting plugins due to page load.
+2014-09-09 14:00:06.677 LineClearanceDemo[76649:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-10 12:55:08.131 LineClearanceDemo[19233:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-10 12:55:08.224 LineClearanceDemo[19233:70b] Unlimited access to network resources
+2014-09-10 12:55:09.089 LineClearanceDemo[19233:70b] Resetting plugins due to page load.
+2014-09-10 12:55:10.436 LineClearanceDemo[19233:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-10 12:59:26.962 LineClearanceDemo[26787:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-10 12:59:26.990 LineClearanceDemo[26787:70b] Unlimited access to network resources
+2014-09-10 12:59:27.308 LineClearanceDemo[26787:70b] Resetting plugins due to page load.
+2014-09-10 12:59:28.745 LineClearanceDemo[26787:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-10 16:21:11.716 LineClearanceDemo[53423:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-10 16:21:11.803 LineClearanceDemo[53423:70b] Unlimited access to network resources
+2014-09-10 16:21:13.017 LineClearanceDemo[53423:70b] Resetting plugins due to page load.
+2014-09-10 16:21:14.366 LineClearanceDemo[53423:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-10 16:41:31.556 LineClearanceDemo[56498:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-10 16:41:31.670 LineClearanceDemo[56498:70b] Unlimited access to network resources
+2014-09-10 16:41:32.577 LineClearanceDemo[56498:70b] Resetting plugins due to page load.
+2014-09-10 16:41:33.854 LineClearanceDemo[56498:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-10 16:55:17.890 LineClearanceDemo[59533:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-10 16:55:17.910 LineClearanceDemo[59533:70b] Unlimited access to network resources
+2014-09-10 16:55:18.318 LineClearanceDemo[59533:70b] Resetting plugins due to page load.
+2014-09-10 16:55:19.415 LineClearanceDemo[59533:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
+2014-09-10 17:21:25.164 LineClearanceDemo[62677:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-10 17:21:25.265 LineClearanceDemo[62677:70b] Unlimited access to network resources
+2014-09-10 17:21:26.478 LineClearanceDemo[62677:70b] Resetting plugins due to page load.
+2014-09-10 17:21:28.094 LineClearanceDemo[62677:70b] Finished load of: file:///Users/mohammei/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01F3B028-6224-4285-A6C3-F48B7140D88F/LineClearanceDemo.app/www/index.html
